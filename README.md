@@ -1,3 +1,5 @@
+//npm install simplelightbox //npm i --save lodash.throttle
+
 # Vanilla App Template
 
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування

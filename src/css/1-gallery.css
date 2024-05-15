@@ -1,0 +1,57 @@
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+.gallery {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1128px;
+  padding: 24px;
+  gap: 20px 24px;
+  list-style-type: none;
+}
+.gallery-item {
+  position: relative;
+  /* box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12); */
+}
+.gallery-link {
+}
+.gallery-image {
+  display: block;
+  object-fit: cover;
+  width: 360px;
+  height: 200px;
+  transition: width 0.25s ease, height 0.25s ease;
+  position: relative;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.gallery-image:hover {
+  transform: scale(calc(376 / 360));
+  cursor: url('../../src/img/bxs_hand-down.png') 13 0, pointer;
+  transition: transform var(--animation-duration) var(--timing-function);
+}
+
+div.sl-overlay {
+  background: #2e2f42;
+}
+
+.sl-wrapper button.sl-close {
+  color: #fff;
+}
+.sl-wrapper button.sl-close:hover {
+  color: lightgray;
+}
+
+.sl-wrapper .sl-navigation button.sl-prev,
+.sl-wrapper .sl-navigation button.sl-next,
+.sl-wrapper .sl-counter span.sl-current,
+.sl-wrapper div.sl-counter,
+.sl-wrapper .sl-counter span.sl-total {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
